@@ -53,7 +53,7 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_customer_prefix"></a> [customer\_prefix](#input\_customer\_prefix) | Stacklet provided customer prefix | `string` | n/a | yes |
-| <a name="input_stacklet_saas_account_id"></a> [stacklet\_saas\_account\_id](#input\_stacklet\_saas\_account\_id) | Stacklet provided SaaS Account ID | `string` | `null` | no |
+| <a name="input_stacklet_saas_account_id"></a> [stacklet\_saas\_account\_id](#input\_stacklet\_saas\_account\_id) | Stacklet provided SaaS Account ID | `string` | n/a | yes |
 
 ## Outputs
 
