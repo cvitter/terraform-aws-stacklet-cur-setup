@@ -46,13 +46,13 @@ No modules.
 | [aws_s3_bucket_public_access_block.block_public_access](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket_public_access_block) | resource |
 | [aws_s3_bucket_server_side_encryption_configuration.cur_bucket_encryption_config](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket_server_side_encryption_configuration) | resource |
 | [random_string.storage_account_suffix](https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/string) | resource |
+| [aws_region.current](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/region) | data source |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_customer_prefix"></a> [customer\_prefix](#input\_customer\_prefix) | Stacklet provided customer prefix | `string` | n/a | yes |
-| <a name="input_s3_region"></a> [s3\_region](#input\_s3\_region) | n/a | `string` | `"us-east-1"` | no |
 | <a name="input_stacklet_saas_account_id"></a> [stacklet\_saas\_account\_id](#input\_stacklet\_saas\_account\_id) | Stacklet provided SaaS Account ID | `string` | `null` | no |
 
 ## Outputs

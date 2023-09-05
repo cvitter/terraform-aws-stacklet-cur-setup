@@ -5,7 +5,7 @@ resource "aws_cur_report_definition" "stacklet_shared_cur_report" {
   compression                = "Parquet"
   additional_schema_elements = ["RESOURCES"]
   s3_bucket                  = local.s3_bucket_name
-  s3_region                  = var.s3_region
+  s3_region                  = data.aws_region.current.name
   s3_prefix                  = "cur"
   additional_artifacts       = ["ATHENA"]
   report_versioning          = "OVERWRITE_REPORT"
