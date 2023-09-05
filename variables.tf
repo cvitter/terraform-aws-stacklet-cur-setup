@@ -3,9 +3,11 @@ variable "s3_region" {
   default = "us-east-1"
 }
 variable "stacklet_saas_account_id" {
-  type    = string
-  default = null
+  type        = string
+  default     = null
+  description = "Stacklet provided SaaS Account ID"
 }
 variable "customer_prefix" {
-  type = string
+  type        = string
+  description = "Stacklet provided customer prefix"
 }

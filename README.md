@@ -19,15 +19,6 @@ It does the following:
 
 This setup ensures that the CUR is in the format required by Stacklet, and that the Stacklet platform SAAS account can read CUR data in the correct S3 bucket.
 
-### Inputs
-
-The terraform accepts three inputs:
-
-* `customer_prefix` - (required) The customer prefix
-* `stacklet_saas_account_id` - (required) The account ID where the Stacklet platform for this customer is deployed
-* `s3_region` - (optional) AWS region where the s3 bucket is created (default: us-east-1)
-
-If you need help identifying the correct values for `customer_prefix` and `stacklet_saas_account_id`, please contact Stacklet customer success.
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
@@ -60,9 +51,9 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_customer_prefix"></a> [customer\_prefix](#input\_customer\_prefix) | n/a | `string` | n/a | yes |
+| <a name="input_customer_prefix"></a> [customer\_prefix](#input\_customer\_prefix) | Stacklet provided customer prefix | `string` | n/a | yes |
 | <a name="input_s3_region"></a> [s3\_region](#input\_s3\_region) | n/a | `string` | `"us-east-1"` | no |
-| <a name="input_stacklet_saas_account_id"></a> [stacklet\_saas\_account\_id](#input\_stacklet\_saas\_account\_id) | n/a | `string` | `null` | no |
+| <a name="input_stacklet_saas_account_id"></a> [stacklet\_saas\_account\_id](#input\_stacklet\_saas\_account\_id) | Stacklet provided SaaS Account ID | `string` | `null` | no |
 
 ## Outputs
 
