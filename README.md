@@ -66,7 +66,6 @@ No modules.
 module "cur-setup" {
   source = "github.com/stacklet/terraform-aws-stacklet-cur-setup"
   customer_prefix = ""
-  s3_region = ""
   stacklet_saas_account_id = ""
 }
 ```
